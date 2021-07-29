@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which will win?</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body class="index2_body">
+
+    <main>
+        <h3 id="index3_h3_win">
+            <div class="index3_h3_div1">
+                <img src="images/player/hyakuretsu.jpg" alt="kougeki">
+            </div>
+            <div class="index3_h3_div2">
+                <img src="images/computer/raoh_damage.jpg" alt="damage">
+            </div>
+            <div class="index3_h3_div3">
+                <img src="images/computer/fufufu.png" alt="migoto">
+            </div>
+        </h3>
+        <h3 id="index3_h3_lose">
+            <div class="index3_h3_div1">
+                <img src="images/computer/kikanu.jpg" alt="kikanu">
+            </div>
+            <div class="index3_h3_div2">
+                <img src="images/computer/raoh_kougeki.jpg" alt="r_kougeki">
+            </div>
+            <div class="index3_h3_div3">
+                <img src="images/player/ken_damage.jpg" alt="k_damage">
+            </div>
+        </h3>
+
+    </main>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        const me = Math.floor(Math.random()*3)
+        const pc = Math.floor(Math.random()*3)
+        const result = (me+pc)
+        var num = 4
+        if(num === result){
+            $('#index3_h3_win').fadeIn();
+            console.log('win')
+            setTimeout(function() {
+            $('.index3_h3_div1').fadeIn();
+            }, 2000);
+            setTimeout(function() {
+            $('.index3_h3_div1').fadeOut();
+            }, 4000);
+            setTimeout(function() {
+            $('.index3_h3_div2').fadeIn();
+            }, 4500);
+            setTimeout(function() {
+            $('.index3_h3_div2').fadeOut();
+            }, 6500);
+            setTimeout(function() {
+            $('.index3_h3_div3').fadeIn();
+            }, 7000);
+            setTimeout(function() {
+            alert('You win. \nCongratulation!!');
+            }, 10000);
+        }else{
+            $('#index3_h3_lose').fadeIn();
+            console.log('lose')
+            setTimeout(function() {
+            $('.index3_h3_div1').fadeIn();
+            }, 2000);
+            setTimeout(function() {
+            $('.index3_h3_div1').fadeOut();
+            }, 4000);
+            setTimeout(function() {
+            $('.index3_h3_div2').fadeIn();
+            }, 4500);
+            setTimeout(function() {
+            $('.index3_h3_div2').fadeOut();
+            }, 6500);
+            setTimeout(function() {
+            $('.index3_h3_div3').fadeIn();
+            }, 7000);
+            setTimeout(function() {
+            confirm('You lose. \nAre you back to the game?');
+            }, 10000);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

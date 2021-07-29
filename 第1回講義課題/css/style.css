@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* index start */
+.header_box{
+    position: relative;
+}
+
+.body_img{
+    width: 100%;
+}
+
+.header_h1{
+    font-size: 5em;
+    font-weight: bold;
+    color: whitesmoke;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation  : wrpst_h1 4s linear infinite alternate;
+    }
+    @keyframes wrpst_h1{
+    0% { text-shadow:   2px  2px 10px #fff ,
+                        -2px  2px 10px #fff ,
+                        2px -2px 10px #fff ,
+                        -2px -2px 10px #fff;}
+    100% { text-shadow:  2px  2px 10px #777 ,
+                        -2px  2px 10px #777 ,
+                        2px -2px 10px #777 ,
+                        -2px -2px 10px #777;}
+}
+
+.header_a{
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em 1em;
+    background-color: #00b7ce;
+    border-radius: 5%;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(151, 181, 247);
+    border: 2px solid rgb(151, 222, 255);
+}
+
+.header_d{
+    text-align: center;
+}
+/* index fin */
+
+/* index2 start */
+
+.index2_body{
+    background-image: url(..//images/index2/kouya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body_h2{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1em;
+}
+
+.body_ul{
+    font-size: x-large;
+    color: whitesmoke;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.body_li{
+    padding: 0 0 0.3em 0.1em;
+}
+
+.body_li_div1{
+    text-align: center;
+    padding: 2em 4em;
+    display: none;
+}
+
+.body_li_div2{
+    text-align: center;
+    padding: 2em 4em;
+    display: none;
+}
+
+.body_button{
+    text-align: center;
+    display: none;
+}
+
+.body_button2{
+    font-size: larger;
+    font-weight: bold;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
+
+.game_start{
+    display:none;
+    text-align: center;
+    margin-top: -11.5em;
+}
+
+.choice_attack{
+    display: none;
+    text-align: center;
+}
+
+.choice_button{
+    font-weight: bold;
+    padding: 1em 2em;
+    margin: 2em;
+}
+
+/* index2 fin */
+
+/* index3 start */
+
+#index3_h3_win{
+    text-align: center;
+    display: none;
+    padding-top: 3em;
+}
+
+.index3_h3_div1{
+    display: none;
+    padding-top: 3em;
+}
+
+.index3_h3_div2{
+    display: none;
+    padding-top: 3em;
+}
+
+.index3_h3_div3{
+    display: none;
+    padding-top: 3em;
+}
+
+#index3_h3_lose{
+    text-align: center;
+    display: none;
+    padding-top: 3em;
+}
+
+/* index3 fin */
+
+/* index4 start */
+
+.index4_main1{
+    text-align: center;
+    display: none;
+    padding-top: 8em;
+}
+
+.index4_main2{
+    text-align: center;
+    display: none;
+    padding-top: 4em;
+}
+
+.index4_main3{
+    text-align: center;
+    display: none;
+    padding-top: 5em;
+}
+
+.index4_main4{
+    text-align: center;
+    display: none;
+    padding-top: 4em;
+}
+
+.index4_main5{
+    text-align: center;
+    display: none;
+    padding-top: 4em;
+}
+
+/* index4 fin */

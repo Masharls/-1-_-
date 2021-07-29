@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Game</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index2_body">
+
+    <main>
+
+        <h2 class="body_h2">Final Game</h2>
+        <ul class="body_ul">
+            <div class="body_li_div1">
+                <li class="body_li">Computer</li>
+                <img class="li_img" src="images/computer/raoh1.jpeg" alt="ボスの画像">
+            </div>
+            <div class="body_li_div2">
+                <li class="body_li">Player</li>
+                <img class="li_img" src="images/player/kenshiroh.jpg" alt="自分の画像">
+                </div>
+            </div>
+        </ul>
+        <div class="body_button">
+            <button class="body_button2">Game Start</button>
+        </div>
+
+        <div class="game_start">
+            <img src="images/index2/game_start.jpg" alt="じゃんけん">
+        </div>
+
+        <div class="choice_attack">
+            <button class="choice_button" type="button" onclick="location.href='index3.html'">あたあっ！</button>
+            <button class="choice_button" type="button" onclick="location.href='index3.html'">ほおああっ！</button>
+            <button class="choice_button" type="button" onclick="location.href='index3.html'">あたたたーっ！</button>
+            <button class="choice_button" type="button" onclick="location.href='index9.html'">無想転生</button>
+        </div>
+
+    </main>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $('h2').hide().fadeIn(1500)
+
+        $(function() {
+            setInterval(function() {
+            $('.body_li_div1').fadeIn();
+            }, 2000);
+        });
+
+        $(function() {
+            setInterval(function() {
+            $('.body_li_div2').fadeIn();
+            }, 4000);
+        });
+
+        $(function() {
+            setInterval(function() {
+            $('.body_button').fadeIn();
+            }, 6000);
+        });
+
+        $('button').on('click', function() {
+                $('.li_img').css('width','50%')
+                $('.body_ul').css('justify-content','space-between')
+                $('.body_ul').css('font-size','small')
+                $('.body_button2').hide()
+                setInterval(function() {
+                    $('.game_start').fadeIn();
+                    }, 2000);
+                setInterval(function() {
+                    $('.choice_attack').fadeIn();
+                    }, 4000);            
+        });
+
+    </script>
+
+
+</body>
+
+</html>
