@@ -22,7 +22,7 @@
                 <img src="images/computer/raoh_damage.jpg" alt="damage">
             </div>
             <div class="index3_h3_div3">
-                <img src="images/computer/fufufu.png" alt="migoto">
+                <img src="images/computer/raoh_taoreru.jpg" alt="migoto">
             </div>
         </h3>
         <h3 id="index3_h3_lose">
@@ -86,7 +86,8 @@
             $('.index3_h3_div3').fadeIn();
             }, 7000);
             setTimeout(function() {
-            confirm('You lose. \nAre you back to the game?');
+            ret=confirm('You lose. \nAre you back to the game?');
+            if(ret===true){location.href="index2.html";}
             }, 10000);
         }
 

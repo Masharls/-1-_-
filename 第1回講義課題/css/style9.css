@@ -2,6 +2,14 @@
 
 /* index9 start */
 
+.body_top{
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: initial;
+    text-align: center;
+    padding: 3em 0 2em;
+}
+
 meta.foundation-version {
     font-family: "/5.2.3/";
 }
